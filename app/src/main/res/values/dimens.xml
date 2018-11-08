@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imagebutton_height_width">100dp</dimen>
+    <dimen name="imagebutton_margin">20dp</dimen>
+    <dimen name="main_height_zero">0dp</dimen>
+    <dimen name="main_header_margin">5dp</dimen>
+    <dimen name="header_text_size">30sp</dimen>
+    <dimen name="artist_text_size">22sp</dimen>
+    <dimen name="album_text_size">15sp</dimen>
+    <dimen name="song_list_item_layout_padding">8dp</dimen>
+    <dimen name="song_profile_header_margin">20dp</dimen>
+    <dimen name="song_profile_image_margin">50dp</dimen>
+    <dimen name="song_profile_image_height_width">200dp</dimen>
+</resources>
