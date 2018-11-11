@@ -2,10 +2,13 @@
     <string name="app_name">Animal Music</string>
     <string name="songlist_name">Songlist</string>
     <string name="description_play_button">Play Button</string>
+    <string name="description_back_button">Back Button</string>
     <string name="title">Title: </string>
     <string name="artist">Artist: </string>
     <string name="placeholder_title_name">Title Name</string>
     <string name="placeholder_artist_name">Artist Name</string>
     <string name="placeholder_album_name">Album Name</string>
     <string name="description_album_image">Album Image</string>
+    <string name="main_activity_label">Main Activity</string>
+    <string name="song_profile_activity_label">Song Profile Activity</string>
 </resources>

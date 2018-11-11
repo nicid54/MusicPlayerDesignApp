@@ -1,6 +1,7 @@
 package com.example.android.musicplayerdesignapp;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -78,10 +79,10 @@ public class SongAdapter extends ArrayAdapter<Song> {
     private void onClickHandler(View view) {
 
         if (mLastSelectedView != null) {
-            mLastSelectedView.setBackgroundColor(ContextCompat.getColor(this.getContext(),R.color.colorSalmon));
+            mLastSelectedView.setBackgroundColor(Color.WHITE);
         }
 
-        view.setBackgroundColor(ContextCompat.getColor(this.getContext(), R.color.colorPeach));
+        view.setBackgroundColor(ContextCompat.getColor(this.getContext(), R.color.colorSalmon));
         mLastSelectedView = view;
         mSelectedViewPosition = view.getId();
     }

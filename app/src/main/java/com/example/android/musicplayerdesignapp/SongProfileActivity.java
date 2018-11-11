@@ -1,5 +1,6 @@
 package com.example.android.musicplayerdesignapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +32,7 @@ public class SongProfileActivity extends AppCompatActivity {
         isSongPlaying = true;
     }
 
+
     /**
      * Builds a Song from an input Bundle with Song Data
      * @param songBundle the input Bundle
@@ -58,6 +60,7 @@ public class SongProfileActivity extends AppCompatActivity {
         ((ImageView) findViewById(R.id.song_album_image)).setImageResource(song.getAlbumImage());
     }
 
+
     /**
      * Adds an Event Listener to the Play ImageButton
      */
@@ -65,12 +68,31 @@ public class SongProfileActivity extends AppCompatActivity {
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                processPlayButtonClick(view);
+                onClickEventHandler(view);
             }
         };
 
         (findViewById(R.id.song_play_imagebutton)).setOnClickListener(onClickListener);
+        (findViewById(R.id.song_back_imagebutton)).setOnClickListener(onClickListener);
     }
+
+
+    /**
+     * Handles the On-Click Events
+     * @param view the view that was clicked
+     */
+    private void onClickEventHandler(View view) {
+
+        //Play Button Clicked
+        if (view.getId() == R.id.song_play_imagebutton) {
+            processPlayButtonClick(view);
+        } //Back Button Clicked
+        else if (view.getId() == R.id.song_back_imagebutton){
+            //Load Main Activity
+            startActivity(new Intent(this, MainActivity.class));
+        }
+    }
+
 
     /**
      * Handles the PLay and Pause Button images based on the Song play state

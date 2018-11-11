@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorSalmon">
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/song_back_imagebutton"
+        android:layout_width="@dimen/song_back_image_height_width"
+        android:layout_height="@dimen/song_back_image_height_width"
+        android:background="@drawable/button_click_effect_back"
+        android:layout_marginLeft="@dimen/song_back_button_margin"
+        android:layout_marginStart="@dimen/song_back_button_margin"
+        android:layout_marginTop="@dimen/song_back_button_margin"
+        android:contentDescription="@string/description_back_button"/>
 
     <TextView
         android:id="@+id/song_title_name"
@@ -46,7 +55,6 @@
         android:layout_height="@dimen/imagebutton_height_width"
         android:background="@drawable/button_click_effect_pause"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="@dimen/imagebutton_margin"
         android:contentDescription="@string/description_play_button"/>
 
 </LinearLayout>

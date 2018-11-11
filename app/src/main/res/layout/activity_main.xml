@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:weightSum="10"
     android:clickable="true"
-    android:focusable="true"
-    android:background="@color/colorSalmon">
+    android:focusable="true">
 
     <TextView
     android:layout_width="match_parent"
@@ -15,7 +14,9 @@
     android:textSize="@dimen/header_text_size"
     android:background="@drawable/line"
     android:textColor="@android:color/black"
-    android:layout_margin="@dimen/main_header_margin"
+    android:paddingLeft="@dimen/main_header_padding"
+    android:paddingStart="@dimen/main_header_padding"
+    android:paddingEnd="@dimen/main_header_padding"
     android:layout_weight="1"/>
 
     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
